@@ -75,7 +75,7 @@ public class PersonController {
       }
        
        @GetMapping (value="/byname/{name}")
-       public List<Person> allPerson (@PathVariable(value="name") String nom){
+       public List<Person> allPerson_byName (@PathVariable(value="name") String nom){
          
             return persRep.getByNom(nom);
           
